@@ -279,7 +279,7 @@ home-img img, .about-img img {
 }
 
 .portfolio-layer a i {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--bg-color-02);
 }
 
@@ -544,7 +544,7 @@ footer {
 
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1449px) {
     .home-img, .about-img {
         max-width: 25%;
     }
@@ -564,5 +564,60 @@ footer {
 
     .portfolio-box {
         flex-grow: 1; 
+    }
+
+    .portfolio-box .portfolio-layer {
+        padding: 1rem;
+    }
+
+    .portfolio-layer h4 {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+
+    .portfolio-layer p {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin: 0.2rem 0.5rem;
+    }
+    .portfolio-layer {
+        padding: 1rem 1rem;
+    }
+
+    .portfolio-layer a {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+
+    .portfolio-layer a i {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1450px) {
+    .home-img, .about-img {
+        max-width: 25%;
+    }
+
+    .home-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .home-content h3 {
+        font-size: 2rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+
+    .portfolio-box {
+        flex-grow: 1; 
+    }
+
+    .portfolio-box .portfolio-layer {
+        padding: 0rem;
     }
 }
